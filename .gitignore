@@ -1,0 +1,15 @@
+*~
+*.sublime-workspace
+*.sublime-project
+
+*.slo
+*.lo
+*.o
+*.so
+
+*.lai
+*.la
+*.a
+Makefile
+/bin
+/build/
