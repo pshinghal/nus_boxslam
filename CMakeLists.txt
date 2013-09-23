@@ -73,7 +73,7 @@ include_directories(
 
 ## Declare a cpp executable
 # add_executable(nus_boxslam_node src/nus_boxslam_node.cpp)
-add_executable(sonarInput src/temp.cpp)
+add_executable(sonarReader src/temp.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -83,7 +83,7 @@ add_executable(sonarInput src/temp.cpp)
 # target_link_libraries(nus_boxslam_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(sonarInput
+target_link_libraries(sonarReader
   ${catkin_LIBRARIES}
 )
 

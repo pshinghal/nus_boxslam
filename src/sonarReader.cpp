@@ -74,9 +74,7 @@ int main (int argc, char **argv) {
 
         ros::Publisher front_pub = n.advertise<std_msgs::UInt8>("frontSonar", 1);
 
-        ros::Rate loop_rate(100);
-
-        char *portname = "/dev/ttyUSB0";
+        const char *portname = "/dev/ttyUSB0";
         int fd = open (portname, O_RDWR | O_NOCTTY | O_SYNC);
         if (fd < 0)
         {
@@ -107,7 +105,6 @@ int main (int argc, char **argv) {
                 ROS_INFO("%d", msg.data);
 
                 ros::spinOnce();
-                loop_rate.sleep();
         }
         return 0;
 }
